@@ -1,0 +1,90 @@
+html, body{
+    margin: 0px;
+    padding: 0px;
+}
+header{
+    background-color: black;
+    padding: 15px;
+}
+header a{
+    color: #fff;
+    padding: 0 15px;
+}
+header a:hover{
+    color: darkslateblue;
+}
+.slider{
+    margin-top: 15px;
+    background-color: darkslateblue;
+    padding: 15px;
+    font-size: 42px;
+}
+.text-center{
+    text-align: center;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+}
+.film h3{
+    text-align: center;
+}
+.film img{
+    width: 100%;
+}
+.film{
+    margin: 0 5px;
+    padding: 15px;
+    border: 5px solid darkslateblue;
+}
+.film .description{
+    color: black;
+    text-align: center;
+}
+footer{
+    margin-top: 15px;
+    padding: 15px;
+    background-color: black;
+    color: white;
+    font-size: 12px;
+}
+.btn{
+    padding: 7px 12px;
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+}
+.btn:hover{
+    cursor: pointer;
+}
+.btn.btn-pay{
+    background-color: black;
+    color: white;
+}
+.btn.btn-pay:hover{
+    background-color: white;
+    color: black;
+}
+.btn.btn-favorite{
+    background-color: darkslateblue;
+    color: white;
+}
+.btn.btn-favorite:hover{
+    background-color: white;
+    color: darkslateblue;
+}
+.btn-group{
+    text-align: center;
+}
+.btn.btn-diz{
+    background-color: darkcyan;
+    color: white;
+}
+.btn.btn-diz:hover{
+    background-color: white;
+    color: darkcyan;
+}
+nav ul{
+    display: flex;
+
+}
