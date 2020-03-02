@@ -59,7 +59,6 @@ function findById($news, $id){
     return false;
 }
 
-
 /**
  * @param $news
  */
