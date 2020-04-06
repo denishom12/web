@@ -11,11 +11,11 @@ use Yii;
  * @property string $text Текст
  * @property string $createdAt Дата создания
  * @property string|null $updatedAt Дата изменения
- * @property int $filmid Фильм
+ * @property int $filmId Фильм
  *
  * @property Film $film
  */
-class Comment extends \yii\db\ActiveRecord
+class Comment extends BaseModel
 {
     /**
      * {@inheritdoc}
@@ -31,13 +31,14 @@ class Comment extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['text', 'createdAt', 'filmid'], 'required'],
+            [['text', 'filmId'], 'required'],
             [['createdAt', 'updatedAt'], 'safe'],
-            [['filmid'], 'integer'],
+            [['filmId'], 'integer'],
             [['text'], 'string', 'max' => 256],
-            [['filmid'], 'exist', 'skipOnError' => true, 'targetClass' => Film::class(), 'targetAttribute' => ['filmid' => 'id']],
+            [['filmId'], 'exist', 'skipOnError' => true, 'targetClass' => Film::class, 'targetAttribute' => ['filmId' => 'id']],
         ];
     }
+
 
     /**
      * {@inheritdoc}
@@ -49,9 +50,10 @@ class Comment extends \yii\db\ActiveRecord
             'text' => 'Текст',
             'createdAt' => 'Дата создания',
             'updatedAt' => 'Дата изменения',
-            'filmid' => 'Фильм',
+            'filmId' => 'Фильм',
         ];
     }
+
 
     /**
      * Gets query for [[Film]].
@@ -60,6 +62,6 @@ class Comment extends \yii\db\ActiveRecord
      */
     public function getFilm()
     {
-        return $this->hasOne(Film::class(), ['id' => 'filmid']);
+        return $this->hasOne(Film::class, ['id' => 'filmId']);
     }
 }

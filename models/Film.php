@@ -3,6 +3,7 @@
 namespace app\models;
 
 use Yii;
+use yii\behaviors\TimestampBehavior;
 
 /**
  * This is the model class for table "films".
@@ -12,7 +13,7 @@ use Yii;
  * @property string $createdAt Дата создания
  * @property string|null $updatedAt Дата изменения
  */
-class Film extends \yii\db\ActiveRecord
+class Film extends BaseModel
 {
     /**
      * {@inheritdoc}
@@ -46,4 +47,19 @@ class Film extends \yii\db\ActiveRecord
             'updatedAt' => 'Дата изменения',
         ];
     }
+
+
+    public function getComments(){
+        return $this -> hasMany(Comment::class,['filmId' => 'id']);
+    }
+
+    public function fields()
+    {
+        return array_merge(parent::fields(),[
+            'comments'
+        ]);
+    }
 }
+
+
+
