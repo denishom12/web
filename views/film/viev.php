@@ -14,7 +14,7 @@
 <ul>
     <?php foreach ($comments as $comment): ?>
         <li>
-             <?= $comment->text?>
+            <?= $comment->text?>
             &nbsp;
             <time class="small text-muted">
                 <?= date('d.m H:s', strtotime($comment->createdAt))?>

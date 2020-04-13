@@ -55,7 +55,13 @@ $config = [
                     'class' => \yii\rest\UrlRule::class,
                     'controller' => ['v1/film', 'v1/comment'],
                     'prefix' => 'api'
-                ]
+                ],
+                [
+                    'class' => \yii\rest\UrlRule::class,
+                    'controller' => ['v1/product', 'v1/review','v1/user'],
+                    'prefix' => 'api'
+                ],
+                '/api/v1/app/login' =>'v1/app/login'
             ],
         ],
 
