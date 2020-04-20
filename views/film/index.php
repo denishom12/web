@@ -6,16 +6,16 @@ use yii\helpers\Html;
  */
 
 ?>
-
 <h1>Фильмы</h1>
 
-<?php foreach ($films as $film): ?>
+<p>counter: <span class= "count"></span></p>
 
-<article>
-    <h3>
-        <?= Html::a($film->title,['film/view','id'=> $film->id])?>
-    </h3>
-    <p><?= $film->id?></p>
-</article>
+<p>
+    <button class="btn btn-success btn-timer">On</button>
+    <button class="btn btn-warning btn-clear">Null</button>
+</p>
+<section class="films-list"></section>>
 
-<?php endforeach; ?>
+
+
+
