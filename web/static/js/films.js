@@ -60,7 +60,7 @@ btnClear.addEventListener('click', function(){
 
 /**
  * Возвращает счетчик
- *
+ *npm install -g @vue/cli
  *
  */
 function getCounter(){
