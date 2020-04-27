@@ -1,35 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Kitchen Shop </title>
     <link href="static/css/mysite.css" rel="stylesheet">
+    <link href="static/js/js.js" rel="stylesheet">
 </head>
+
 <body>
     <header>
         <nav>
             <ul>
-                <p>
+                <li>
                     <a class = "logo" href ="indexmy.html">тут лого</a>
-                </p>
-                <p>
+                </li>
+                <li>
                     <a class ="headerall" href ="allkitchen.html">Каталог</a>
-                </p>
-                <p>
+                </li>
+                <li>
                     <a  href ="clients.html">Наши работы</a>
-                </p>
-                <p>
+                </>
+                <li>
                     <a  href ="about.html">О нас</a>
-                </p>
-                <p>
+                </li>
+                <li>
                     <a href ="contacts.html">Контакты</a>
-                </p>
-                <p>
+                </li>
+                <li>
                     <a class="korzina" href ="korzina.html">Корзина</a>
-                </p>
+                </li>
             </ul>
         </nav>
     </header>
+
     <header class="header">
         <div class="overlay">
             <div class="start-header">
@@ -39,10 +44,49 @@
             </div>
         </div>
     </header>
+
 <main>
-    <section class="carousel text-carousel">
-        carousel
+
+    <section class="carousel-full">
+        <div class="carousel-wrapper">
+            <span id="item-1"></span>
+            <span id="item-2"></span>
+            <span id="item-3"></span>
+            <div class="carousel-item item-1">
+                <h2>Новые варианты</h2>
+                <p>Шикарный прованс</p>
+                <a class="arrow arrow-prev" href="#item-3"></a>
+                <a class="arrow arrow-next" href="#item-2"></a>
+            </div>
+
+            <div class="carousel-item item-2">
+                <h2>Новые варианты</h2>
+                <p>Изящный цвет</p>
+                <a class="arrow arrow-prev" href="#item-1"></a>
+                <a class="arrow arrow-next" href="#item-3"></a>
+            </div>
+
+            <div class="carousel-item item-3">
+                <h2>Новые варианты</h2>
+                <p>Сердце дома</p>
+                <a class="arrow arrow-prev" href="#item-2"></a>
+                <a class="arrow arrow-next" href="#item-1"></a>
+            </div>
+        </div>
     </section>
+
+    <section>
+        <div class="header1">
+        <div class="overlay1">
+            <div class="start-header">
+                <p class="start">  Наши кухни- это произведение искусства!</p>
+                <p>Комманда опытных дизайнеров поможет вам подобрать свой неповторимый стиль</p>
+                <button class="btn btn-top">Подобрать кухню</button>
+            </div>
+        </div>
+        </div>
+    </section>
+
     <section>
         <h1 class="text-center">
             Выберите кухню вашей мечты
@@ -146,81 +190,90 @@
         <section>
             <div class="footer-container row">
                 <article class="footer-end">
-                <h class="li-footer">
+                <h1 class="li-footer">
                     Покупателям
-                </h>
-                <li>
-                    <a href ="pokupatel.html">Как сделать заказ</a>
-                </li>
-                <li>
-                    <a href ="pokupatel.html">Как снимают размеры</a>
-                </li>
-                <li>
-                    <a href ="pokupatel.html">Хватит ли места для кухни</a>
-                </li>
-                <li>
-                    <a href ="pokupatel.html">Вопрос-ответ</a>
-                </li>
+                </h1>
+                    <ul>
+                        <li>
+                            <a href ="pokupatel.html">Как сделать заказ</a>
+                        </li>
+                        <li>
+                            <a href ="pokupatel.html">Как снимают размеры</a>
+                        </li>
+                        <li>
+                            <a href ="pokupatel.html">Хватит ли места для кухни</a>
+                        </li>
+                        <li>
+                            <a href ="pokupatel.html">Вопрос-ответ</a>
+                        </li>
+                    </ul>
                 </article>
                 <article class="footer-end">
-                    <h class="li-footer">
+                    <h1 class="li-footer">
                         Партнерам
-                    </h>
-                    <li>
-                        <a href ="pokupatel.html">Как начать сотрудничать</a>
-                    </li>
-                    <li>
-                        <a href ="pokupatel.html">Преимущества</a>
-                    </li>
-                    <li>
-                        <a href ="pokupatel.html">Партнерская программа</a>
-                    </li>
+                    </h1>
+                    <ul>
+                        <li>
+                            <a href ="pokupatel.html">Как начать сотрудничать</a>
+                        </li>
+                        <li>
+                            <a href ="pokupatel.html">Преимущества</a>
+                        </li>
+                        <li>
+                            <a href ="pokupatel.html">Партнерская программа</a>
+                        </li>
+                    </ul>
                 </article>
                 <article class="footer-end">
-                    <h class="li-footer">
+                    <h1 class="li-footer">
                         Компания
-                    </h>
-                    <li>
-                        <a href ="pokupatel.html">О нас</a>
-                    </li>
-                    <li>
-                        <a href ="pokupatel.html">Реквизиты</a>
-                    </li>
-                    <li>
-                        <a href ="pokupatel.html">Контакты</a>
-                    </li>
-                    <li>
-                        <a href ="pokupatel.html">Наши скидки</a>
-                    </li>
-                    <li>
-                        <a href ="pokupatel.html">Программы лояльности</a>
-                    </li>
+                    </h1>
+                    <ul>
+                        <li>
+                            <a href ="pokupatel.html">О нас</a>
+                        </li>
+                        <li>
+                            <a href ="pokupatel.html">Реквизиты</a>
+                        </li>
+                        <li>
+                            <a href ="pokupatel.html">Контакты</a>
+                        </li>
+                        <li>
+                            <a href ="pokupatel.html">Наши скидки</a>
+                        </li>
+                        <li>
+                            <a href ="pokupatel.html">Программы лояльности</a>
+                        </li>
+                    </ul>
                 </article>
                 <article class="footer-end">
-                    <h class="li-footer">
+                    <h1 class="li-footer">
                         Мы в соцсетях
-                    </h>
-                    <li>
-                        <a href ="pokupatel.html">Вконтакте</a>
-                    </li>
-                    <li>
-                        <a href ="pokupatel.html">Одноклассники</a>
-                    </li>
-                    <li>
-                        <a href ="pokupatel.html">Facebook</a>
-                    </li>
-                    <li>
-                        <a href ="pokupatel.html">Instagram</a>
-                    </li>
-                    <li>
-                        <a href ="pokupatel.html">YouTube</a>
-                    </li>
+                    </h1>
+                    <ul>
+                        <li>
+                            <a href ="pokupatel.html">Вконтакте</a>
+                        </li>
+                        <li>
+                            <a href ="pokupatel.html">Одноклассники</a>
+                        </li>
+                        <li>
+                            <a href ="pokupatel.html">Facebook</a>
+                        </li>
+                        <li>
+                            <a href ="pokupatel.html">Instagram</a>
+                        </li>
+                        <li>
+                            <a href ="pokupatel.html">YouTube</a>
+                        </li>
+                    </ul>
                 </article>
             </div>
         </section>
        2020 &copy; Kitchen Shop - Самый лучший магазин кухонного интерьера.
         Все права защищены.
     </footer>
+
 </body>
 </html>
 
