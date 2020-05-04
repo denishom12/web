@@ -18,7 +18,7 @@ nav ul{
     display: flex;
 }
 .header{
-    background-image: url('af4d831bc5749a942bbd4434f55066e5.jpg');
+    background-image: url('../../../../my/public/qwe.jpg');
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
@@ -36,7 +36,9 @@ nav ul{
     min-height: 100%;
     min-width: 100%;
     left: 0;
-    top: 110px;
+    top: 100px;
+    width: 100%;
+    height: 100%;
     background: rgba(244, 244, 244, 0.5);
 }
 .overlay1{
@@ -45,6 +47,8 @@ nav ul{
     min-width: 100%;
     left: 0;
     top: 1460px;
+    width: 100%;
+    height: 100%;
     background: rgba(244, 244, 244, 0.5);
 }
 .start-header{
@@ -64,7 +68,7 @@ p.start{
     color: black;
 }
 .headerall{
-    margin-left: 18cm;
+    margin-left: 0cm;
 }
 
 .text-center{
@@ -85,9 +89,6 @@ p.start{
     cursor: pointer;
     transform: scale(1.5);
     transition-duration: 1s;
-}
-.kitchen img:active{
-
 }
 .kitchen{
     margin: 5px 5px;
@@ -130,10 +131,10 @@ p.start{
 .footer-container.row{
     display: flex;
     flex-direction: row;
-    justify-content: start;
+    justify-content: space-around;
 }
 .footer-end{
-    margin: 5px 100px;
+    margin: 5px;
     padding: 15px;
     border: 5px white;
 }
@@ -162,7 +163,7 @@ footer{
 .carousel-wrapper{
     height:600px;
     position:relative;
-    width:100%;
+    width:90%;
     margin:0 auto;
     background-color: #c8b29a;
 }
