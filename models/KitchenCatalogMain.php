@@ -29,7 +29,7 @@ class KitchenCatalogMain extends \yii\db\ActiveRecord
     {
         return [
             [['image', 'title', 'cost'], 'required'],
-            [['cost'], 'integer'],
+            [['cost', 'category_id'], 'integer'],
             [['image', 'title'], 'string', 'max' => 256],
         ];
     }

@@ -3,7 +3,7 @@
         <div class="container row3">
             <article class="kitchencatalogmain" v-for="kitchenmain in kitchenmains">
                 <h3>{{kitchenmain.title}}</h3>
-                <router-link class="nav-link" :to="{name:'About'}">
+                <router-link class="nav-link"  :to="{name: 'article', params: {id: kitchenmain.id}}">
                     <img v-bind:src="kitchenmain.image" class="img-fluid" style="width: 300px">
                 </router-link>
                 <p class="description-o" style="font-size: 15px; font-weight: bolder">{{kitchenmain.cost}} ₽</p>
@@ -20,6 +20,7 @@
     import HTTP from "./http";
     export default {
         name: "KitchenCatalogMain",
+        props: ["categoryId"],
         data(){
             return{
                 kitchenmains:[
@@ -28,8 +29,13 @@
             }
         },
         created(){
-            HTTP.get('/kitchen-catalog-mains')
+            HTTP.get('/kitchen-catalog-mains?categoryId='+this.categoryId)
                 .then(response => (this.kitchenmains = response.data));
+            // let id = this.$route.params.id;
+            // HTTP.get('/kitchen-catalog-mains/' + id)
+            //     .then(response => {
+            //         this.kitchenmains = response.data;
+            //     });
         }
     }
 </script>

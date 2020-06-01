@@ -30,7 +30,10 @@
                 </section>
                 <section class="kitchencatalogmain">
                     <h1 class="otst">Лучшие варианты</h1>
-                    <kitchen-catalog-main></kitchen-catalog-main>
+                    <kitchen-catalog-main :category-id="1"></kitchen-catalog-main>
+                </section>
+                <section>
+                    <myfooter></myfooter>
                 </section>
             </div>
         </section>
@@ -43,16 +46,18 @@
     import TopVariant from "../components/TopVariant";
     import Album from "../components/Album";
     import KitchenCatalogMain from "../components/KitchenCatalogMain";
+    import Myfooter from "../components/Myfooter";
     export default {
         name: "Catalog",
         components: {
+            Myfooter,
             KitchenCatalogMain,
             Album,
             TopVariant,
             PiarCarousel
-
         }
     }
+
 </script>
 
 <style>

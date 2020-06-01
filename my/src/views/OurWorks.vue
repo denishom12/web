@@ -73,12 +73,17 @@
                 </article>
             </div>
         </section>
+        <section>
+            <Myfooter></Myfooter>
+        </section>
     </div>
 </template>
 
 <script>
+    import Myfooter from "../components/Myfooter";
     export default {
-        name: "OurWorks"
+        name: "OurWorks",
+        components: {Myfooter}
     }
 </script>
 
