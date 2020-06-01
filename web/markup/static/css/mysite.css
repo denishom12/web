@@ -25,7 +25,7 @@ nav ul{
     height: 750px;
 }
 .header1{
-    background-image: url('s1205.jpg');
+    background-image: url('../../../../my/public/s1205.jpg');
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
@@ -218,7 +218,7 @@ footer{
 .item-1 {
     z-index: 2;
     opacity: 1;
-    background:url('12123.jpg');
+    background:url('../../../../my/public/12123.jpg');
     background-size:cover;
 }
 .item-2{
@@ -226,7 +226,7 @@ footer{
     background-size:cover;
 }
 .item-3{
-    background:url('s1202.jpg');
+    background:url('../../../../my/public/s1202.jpg');
     background-size:cover;
 }
 

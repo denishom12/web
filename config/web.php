@@ -58,7 +58,7 @@ $config = [
                 ],
                 [
                     'class' => \yii\rest\UrlRule::class,
-                    'controller' => ['v1/product', 'v1/review','v1/user'],
+                    'controller' => ['v1/product', 'v1/review','v1/user', 'v1/kitchen-carousel','v1/kitchen','v1/piar', 'v1/top-variant','v1/album','v1/kitchen-catalog-main'],
                     'prefix' => 'api'
                 ],
                 '/api/v1/app/login' =>'v1/app/login'
