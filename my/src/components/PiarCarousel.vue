@@ -3,7 +3,7 @@
         <b-carousel controls indicators>
             <b-carousel-slide v-for="imag in imags"
                               caption=""
-                              :img-src="imag.image"
+                              :img-src="'/'+imag.image"
             ></b-carousel-slide>
         </b-carousel>
     </div>

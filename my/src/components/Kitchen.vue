@@ -3,14 +3,11 @@
         <div class="container row">
             <article class="kitchen" v-for="kitchen in kitchens">
                 <h3>{{kitchen.title}}</h3>
-                <router-link class="nav-link" :to="{name:'About'}">
-                <img v-bind:src="kitchen.image" class="img-fluid" style="width: 300px">
+                <router-link  :to="{name:'About'}">
+                    <div class="imgCenter"><img v-bind:src="kitchen.image" class="img-fluid" ></div>
                 </router-link>
                 <p class="description-o">{{kitchen.opisanie}}</p>
-                <div class="btn-group">
-                    <button class="btn btn-pay">В корзину</button>
-                    <button class="btn btn-favorite">В избранное</button>
-                </div>
+
             </article>
         </div>
     </div>
@@ -52,9 +49,9 @@
         transition-duration: 1s;
     }
     .kitchen{
-        margin: 5px 5px;
         padding: 15px;
         border: 5px white;
+        width: 400px;
     }
     .kitchen.description{
         color: black;
@@ -65,6 +62,7 @@
         font-size: 14px;
         border: none;
         border-radius: 4px;
+        display: inline;
     }
     .btn:hover{
         cursor: pointer;
@@ -74,7 +72,7 @@
         color: white;
     }
     .btn.btn-pay:hover{
-        background-color: white;
+        background-color: #c8b29a;
         color: black;
     }
     .btn.btn-favorite{
@@ -82,10 +80,14 @@
         color:white;
     }
     .btn.btn-favorite:hover{
-        background-color: white;
+        background-color: #c8b29a;
         color: black;
     }
     .btn-group{
+        text-align: center;
+        width: 100%;
+    }
+    .description-o{
         text-align: center;
     }
 </style>

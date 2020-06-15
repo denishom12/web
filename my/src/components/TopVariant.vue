@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div class="container row">
+        <div class="container row8">
             <article class="topvariant item" v-for="imag in imags">
                 <router-link class="nav-link" :to="{name:'About'}">
                     <img v-bind:src="imag.image" class="img-fluid" style="width: 500px">
@@ -33,7 +33,7 @@
 </script>
 
 <style>
-    .row{
+    .row8{
         display: flex;
         flex-direction: row;
         justify-content: space-around;

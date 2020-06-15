@@ -84,6 +84,7 @@
                     </article>
                 </div>
             </section>
+            <p>Kitchen-shop. Все права защищены.<br>2020г.</p>
         </footer>
     </div>
 </template>

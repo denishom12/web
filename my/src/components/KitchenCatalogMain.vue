@@ -3,14 +3,11 @@
         <div class="container row3">
             <article class="kitchencatalogmain" v-for="kitchenmain in kitchenmains">
                 <h3>{{kitchenmain.title}}</h3>
-                <router-link class="nav-link"  :to="{name: 'article', params: {id: kitchenmain.id}}">
+                <router-link class="nav-link"  :to="{name: 'KitchenOne', params: {id: kitchenmain.id}}">
                     <img v-bind:src="kitchenmain.image" class="img-fluid" style="width: 300px">
                 </router-link>
                 <p class="description-o" style="font-size: 15px; font-weight: bolder">{{kitchenmain.cost}} ₽</p>
-                <div class="btn-group">
-                    <button class="btn btn-pay">В корзину</button>
-                    <button class="btn btn-favorite">В избранное</button>
-                </div>
+
             </article>
         </div>
     </div>
@@ -30,12 +27,10 @@
         },
         created(){
             HTTP.get('/kitchen-catalog-mains?categoryId='+this.categoryId)
-                .then(response => (this.kitchenmains = response.data));
-            // let id = this.$route.params.id;
-            // HTTP.get('/kitchen-catalog-mains/' + id)
-            //     .then(response => {
-            //         this.kitchenmains = response.data;
-            //     });
+                .then(response => {
+                    this.kitchenmains = response.data;
+                })
+
         }
     }
 </script>
@@ -83,34 +78,6 @@
     }
     .kitchencatalogmain.description{
         color: black;
-        text-align: center;
-    }
-    .btn{
-        padding: 7px 12px;
-        font-size: 14px;
-        border: none;
-        border-radius: 4px;
-    }
-    .btn:hover{
-        cursor: pointer;
-    }
-    .btn.btn-pay{
-        background-color: black;
-        color: white;
-    }
-    .btn.btn-pay:hover{
-        background-color: white;
-        color: black;
-    }
-    .btn.btn-favorite{
-        background-color: black;
-        color:white;
-    }
-    .btn.btn-favorite:hover{
-        background-color: white;
-        color: black;
-    }
-    .btn-group{
         text-align: center;
     }
 </style>

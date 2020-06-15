@@ -23,4 +23,5 @@ class KitchenCatalogMainController extends ApiController
             ->all();
         return $models;
     }
+
 }

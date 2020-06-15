@@ -3,17 +3,14 @@
         <section>
             <div class="sidebar">
                 <router-link class="nav-link active" to="/catalog">Главная</router-link>
-                <router-link class="nav-link" to="/">Европейские кухни</router-link>
-                <router-link class="nav-link" to="/">Японские кухни</router-link>
-                <router-link class="nav-link" to="/">Азиатские кухни</router-link>
-                <router-link class="nav-link" to="/">Кухни модерн</router-link>
-                <router-link class="nav-link" to="/">Обеденные столы</router-link>
-                <router-link class="nav-link" to="/">Стулья</router-link>
-                <router-link class="nav-link" to="/">Подвесные полки</router-link>
-                <router-link class="nav-link" to="/">Нео-классика</router-link>
-                <router-link class="nav-link" to="/">Шкафы</router-link>
-                <router-link class="nav-link" to="/">Вытяжки</router-link>
-                <router-link class="nav-link" to="/">Аксессуары</router-link>
+                <router-link class="nav-link" to="/catalog-euro">Европейские кухни</router-link>
+                <router-link class="nav-link" to="/catalog-jap">Японские кухни</router-link>
+                <router-link class="nav-link" to="/catalog-azia">Азиатские кухни</router-link>
+                <router-link class="nav-link" to="/catalog-modern">Кухни модерн</router-link>
+                <router-link class="nav-link" to="/catalog-table">Обеденные столы</router-link>
+                <router-link class="nav-link" to="/catalog-chair">Стулья</router-link>
+                <router-link class="nav-link" to="/catalog-polki">Подвесные полки</router-link>
+                <router-link class="nav-link" to="/catalog-neo">Нео-классика</router-link>
             </div>
 
             <!-- Содержимое страницы -->

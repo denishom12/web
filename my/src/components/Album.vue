@@ -4,7 +4,6 @@
             <article class="album item1" v-for="image in images">
                 <router-link class="nav-link" :to="{name:'About'}">
                     <img v-bind:src="image.image" class="img-fluid" style="width: 500px">
-                    <h3>{{image.title}}</h3>
                 </router-link>
             </article>
         </div>
